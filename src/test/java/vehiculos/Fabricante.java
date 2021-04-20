@@ -53,18 +53,20 @@ public class Fabricante {
 	
 	public static Fabricante fabricaMayorVentas() {
 		
+		Fabricante Mayorfabricante = fabricantes.get(0);
 		
-		int supuestoMaximo = 0;
 		
 		for(Fabricante f : fabricantes) {
 			
-			if(supuestoMaximo < Collections.frequency(Numerofabricantes, f)){
-				supuestoMaximo = Collections.frequency(Numerofabricantes, f);
+			if(Collections.frequency(Numerofabricantes, Mayorfabricante) < Collections.frequency(Numerofabricantes, f)){
+				
+				Mayorfabricante = f;
+				
 			}
 			
 			
 		}
-		return fabricantes.get(supuestoMaximo);
+		return Mayorfabricante;
 	}
 	
 	
