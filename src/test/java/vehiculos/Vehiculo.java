@@ -42,16 +42,17 @@ public class Vehiculo {
 		
 	}
 	
-	public static String getCantidadVehiculos(){
-		return	"Automoviles: " + (Automovil.getTotalAutomovil()+"") + '\n' + "Camionetas: " + Camioneta.getTotalCamioneta()+"" + '\n' + "Camiones: " + Camion.getTotalCamion()+"";
+	public static int getCantidadVehiculos(){
+		return totalVehiculos;
 		
 		
 	}
 	
 	public String vehiculosPorTipo(){
-		String respuesta = "";
+		return	"Automoviles: " + (Automovil.getTotalAutomovil()+"") + '\n' + "Camionetas: " + Camioneta.getTotalCamioneta()+"" + '\n' + "Camiones: " + Camion.getTotalCamion()+"";
+
 		
-		return respuesta;
+		
 	}
 	
 	
