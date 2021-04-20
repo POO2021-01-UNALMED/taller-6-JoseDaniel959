@@ -41,11 +41,29 @@ public class Fabricante {
 	public void setTotalFabricante(int totalFabricante) {
 		this.totalFabricante = totalFabricante;
 	}
-	public static Vehiculo fabricaMayorVentas() {
-		// TODO Auto-generated method stub
-		return null;
+
+	
+	public static Fabricante fabricaMayorVentas() {
+		
+		
+		int supuestoMaximo = 0;
+		
+		for(int i = 1;i<Numerofabricantes.size();i++) {
+			
+			if(Numerofabricantes.get(supuestoMaximo) <Numerofabricantes.get(i)) {
+				
+				supuestoMaximo = i;
+			}
+			else{
+				
+				
+			}
+		
+			
+			
+		}
+		return fabricantes.get(supuestoMaximo);
 	}
-
-
+	
 
 }
