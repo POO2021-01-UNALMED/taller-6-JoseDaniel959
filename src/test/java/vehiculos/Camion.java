@@ -17,6 +17,8 @@ public class Camion extends Vehiculo{
 		super.fabricante = fabricante;
 		this.ejes = ejes;
 		totalCamion++;
+		Vehiculo.totalVehiculos++;
+
 	}
 
 	public int getEjes() {

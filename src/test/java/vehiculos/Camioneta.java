@@ -21,7 +21,8 @@ public class Camioneta extends Vehiculo {
 		super.traccion = "4X4";
 		this.volco = b;
 		totalCamioneta++;
-	
+		Vehiculo.totalVehiculos++;
+
 	}
 
 
