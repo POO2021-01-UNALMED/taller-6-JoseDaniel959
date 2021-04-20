@@ -41,6 +41,10 @@ public class Fabricante {
 	public void setTotalFabricante(int totalFabricante) {
 		this.totalFabricante = totalFabricante;
 	}
+	public static Vehiculo fabricaMayorVentas() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 
 
 

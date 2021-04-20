@@ -36,9 +36,9 @@ public class Vehiculo {
 	public Vehiculo() {};
 
 
-	public static int setCantidadVehiculos(){
+	public static void setCantidadVehiculos(int cantidad){
 		
-		return totalVehiculos;
+		totalVehiculos = cantidad;
 		
 	}
 	
