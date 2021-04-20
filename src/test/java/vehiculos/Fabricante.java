@@ -7,7 +7,7 @@ public class Fabricante {
 	private String nombre;
 	private Pais pais;
 	private int totalFabricante;
-	private static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
+	public static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
 	private static ArrayList<Fabricante> Numerofabricantes = new ArrayList<Fabricante>();
 	
 	
@@ -19,7 +19,7 @@ public class Fabricante {
 		this.pais = pais;
 		totalFabricante++;
 		
-		if(fabricantes.indexOf(this) != -1) {
+		if(fabricantes.indexOf(this) == -1) {
 			fabricantes.add(this);
 			Numerofabricantes.add(this);
 			
@@ -66,6 +66,7 @@ public class Fabricante {
 		}
 		return fabricantes.get(supuestoMaximo);
 	}
+	
 	
 
 }
