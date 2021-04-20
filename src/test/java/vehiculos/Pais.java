@@ -26,9 +26,9 @@ public class Pais {
 		this.totalPais = totalPais;
 	}
 
-	public static Vehiculo paisMasVendedor() {
-		// TODO Auto-generated method stub
-		return null;
+	public static Pais paisMasVendedor() {
+		
+		return Fabricante.fabricaMayorVentas().getPais();
 	}
 	
 	//public static String paisMasVendedor() {

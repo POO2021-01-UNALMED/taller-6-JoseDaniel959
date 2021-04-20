@@ -8,7 +8,7 @@ public class Fabricante {
 	private Pais pais;
 	private int totalFabricante;
 	private static ArrayList<Fabricante> fabricantes = new ArrayList<Fabricante>();
-	private static ArrayList<Integer> Numerofabricantes = new ArrayList<Integer>();
+	private static ArrayList<Fabricante> Numerofabricantes = new ArrayList<Fabricante>();
 	
 	
 	
@@ -21,11 +21,11 @@ public class Fabricante {
 		
 		if(fabricantes.indexOf(this) != -1) {
 			fabricantes.add(this);
-			Numerofabricantes.add(1);
+			Numerofabricantes.add(this);
 			
 		}
 		else{
-			Numerofabricantes.set(fabricantes.indexOf(this), Numerofabricantes.get(fabricantes.indexOf(this))+1);
+			Numerofabricantes.add(this);
 			
 		}
 		
@@ -56,17 +56,11 @@ public class Fabricante {
 		
 		int supuestoMaximo = 0;
 		
-		for(int i = 1;i<Numerofabricantes.size();i++) {
+		for(Fabricante f : fabricantes) {
 			
-			if(Numerofabricantes.get(supuestoMaximo) <Numerofabricantes.get(i)) {
-				
-				supuestoMaximo = i;
+			if(supuestoMaximo < Collections.frequency(Numerofabricantes, f)){
+				supuestoMaximo = Collections.frequency(Numerofabricantes, f);
 			}
-			else{
-				
-				
-			}
-		
 			
 			
 		}
