@@ -19,7 +19,15 @@ public class Fabricante {
 		this.pais = pais;
 		totalFabricante++;
 		
-		
+		if(fabricantes.indexOf(this) != -1) {
+			fabricantes.add(this);
+			Numerofabricantes.add(1);
+			
+		}
+		else{
+			Numerofabricantes.set(fabricantes.indexOf(this), Numerofabricantes.get(fabricantes.indexOf(this))+1);
+			
+		}
 		
 	
 	}
