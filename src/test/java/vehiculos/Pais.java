@@ -25,6 +25,11 @@ public class Pais {
 	public void setTotalPais(int totalPais) {
 		this.totalPais = totalPais;
 	}
+
+	public static Vehiculo paisMasVendedor() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	//public static String paisMasVendedor() {
 		
