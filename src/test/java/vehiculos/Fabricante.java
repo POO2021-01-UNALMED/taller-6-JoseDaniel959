@@ -42,28 +42,6 @@ public class Fabricante {
 		this.totalFabricante = totalFabricante;
 	}
 
-	
-	public static Fabricante fabricaMayorVentas() {
-		
-		
-		int supuestoMaximo = 0;
-		
-		for(int i = 1;i<Numerofabricantes.size();i++) {
-			
-			if(Numerofabricantes.get(supuestoMaximo) <Numerofabricantes.get(i)) {
-				
-				supuestoMaximo = i;
-			}
-			else{
-				
-				
-			}
-		
-			
-			
-		}
-		return fabricantes.get(supuestoMaximo);
-	}
-	
+
 
 }

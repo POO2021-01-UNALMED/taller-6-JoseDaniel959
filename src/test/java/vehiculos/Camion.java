@@ -8,7 +8,7 @@ public class Camion extends Vehiculo{
 	
 	public Camion(String placa,String texto,int precio,int peso,Fabricante fabricante,int ejes) {
 		super.placa = placa;
-		super.puertas = 4;
+		super.puertas = 2;
 		super.velocidadMaxima = 80;
 		super.nombre = texto;
 		super.precio = precio;
